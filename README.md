@@ -16,11 +16,11 @@
 
 Neste repositório serão guardados todos os códigos desenvolvidos ao longo do curso de React do instrutor Matheus Battisti, do [Hora de Codar](https://www.horadecodar.com.br/).
 
->**Nome do curso:** React do Zero a Maestria (c/ hooks, router, API, Projetos)
+> **Nome do curso:** React do Zero a Maestria (c/ hooks, router, API, Projetos)
 >
->**Descrição:** Crie projetos completos com React, utilizando tecnologias em alta no mercado como Firebase, Node.js, MongoDB e mais!
+> **Descrição:** Crie projetos completos com React, utilizando tecnologias em alta no mercado como Firebase, Node.js, MongoDB e mais!
 >
->**Plataforma e conteúdo do curso:** Acesse a página do curso na [Udemy](https://www.udemy.com/course/react-do-zero-a-maestria-c-hooks-router-api-projetos/) para ver todos os conteúdos abordados.
+> **Plataforma e conteúdo do curso:** Acesse a página do curso na [Udemy](https://www.udemy.com/course/react-do-zero-a-maestria-c-hooks-router-api-projetos/) para ver todos os conteúdos abordados.
 
 ---
 
@@ -30,13 +30,13 @@ _English version_
 
 ### 🔎 About
 
-In this repo I'll save all the codes developed during the React course I'm taking. The course instructor is the developer Matheus Battisti, from hte blog [_Hora de Codar_](https://www.horadecodar.com.br/) (_Time to Code_).
+In this repo I'll save all the codes developed during the React course I'm taking. The course instructor is the developer Matheus Battisti, from the blog [_Hora de Codar_](https://www.horadecodar.com.br/) (_Time to Code_).
 
->**Course name:** React from Zero to Mastery (with hooks, router, API, projects)
+> **Course name:** React from Zero to Mastery (with hooks, router, API, projects)
 >
->**Description:** Create complete projects with React, using popular technologies as Firebase, Node.js, MongoDB and more!
+> **Description:** Create complete projects with React, using popular technologies as Firebase, Node.js, MongoDB and more!
 >
->**Platform and course content:** Go to the course webpage on [Udemy](https://www.udemy.com/course/react-do-zero-a-maestria-c-hooks-router-api-projetos/) to see all the content that will be studied.
+> **Platform and course content:** Go to the course webpage on [Udemy](https://www.udemy.com/course/react-do-zero-a-maestria-c-hooks-router-api-projetos/) to see all the content that will be studied.
 
 ---
 
