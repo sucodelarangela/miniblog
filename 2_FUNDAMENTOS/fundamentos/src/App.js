@@ -1,5 +1,6 @@
 // components
 import FirstComponent from './Components/FirstComponent';
+import TemplateExpressions from './Components/TemplateExpressions';
 
 // styles
 import './App.css';
@@ -11,6 +12,7 @@ function App() {
 
       {/* First component loaded into App.js */}
       <FirstComponent />
+      <TemplateExpressions />
     </div>
   );
 };
