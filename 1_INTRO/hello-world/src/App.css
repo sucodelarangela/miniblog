@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.App p {
+  color: #333;
+}
+
+.App p > span {
+  font-weight: bold;
+  font-style: italic;
+}
