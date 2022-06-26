@@ -5,6 +5,7 @@ import ConditionalRender from './Components/ConditionalRender';
 import ShowUserName from './Components/ShowUserName';
 import CarDetails from './Components/CarDetails';
 import Fragment from './Components/Fragment';
+import Container from './Components/Container';
 
 // styles
 import './App.css';
@@ -40,6 +41,7 @@ function App() {
       <ListRender />
       <ConditionalRender />
       <ShowUserName name={userName} />
+
       <CarDetails brand="Volkswagen" km={100000} color="Azul" newCar={false} />
       <CarDetails brand="Ford" km={0} color="Vermelha" newCar={true} />
       <CarDetails brand="Fiat" km={4500} color="Branco" newCar={false} />
@@ -47,7 +49,15 @@ function App() {
       {cars.map((car) => (
         <CarDetails key={car.id} brand={car.brand} km={car.km} color={car.color} newCar={car.newCar} />
       ))}
+
       <Fragment propFragment="teste" />
+
+      <Container myValue="aleatório">
+        <p>E este é o conteúdo</p>
+      </Container>
+      <Container myValue="indefinido">
+        <h5>Testando o container</h5>
+      </Container>
     </div>
   );
 }
