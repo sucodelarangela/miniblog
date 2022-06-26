@@ -18,6 +18,12 @@ function App() {
   const name = 'Tereza';
   const [userName] = useState('Maria');
 
+  const cars = [
+    { id: 1, brand: "Ferrari", color: "Amarelo", newCar: true, km: 0 },
+    { id: 2, brand: "Kia", color: "Branco", newCar: false, km: 34343 },
+    { id: 3, brand: "Renault", color: "Azul ", newCar: false, km: 234 }
+  ];
+
   return (
     <div className="App">
       <h1>Avançando em React</h1>
@@ -33,7 +39,13 @@ function App() {
       <ListRender />
       <ConditionalRender />
       <ShowUserName name={userName} />
-      <CarDetails brand="Volkswagen" km={100000} color="Azul" />
+      <CarDetails brand="Volkswagen" km={100000} color="Azul" newCar={false} />
+      <CarDetails brand="Ford" km={0} color="Vermelha" newCar={true} />
+      <CarDetails brand="Fiat" km={4500} color="Branco" newCar={false} />
+      {/* Looping an array of objects */}
+      {cars.map((car) => (
+        <CarDetails brand={car.brand} km={car.km} color={car.color} newCar={car.newCar} />
+      ))}
     </div>
   );
 }
