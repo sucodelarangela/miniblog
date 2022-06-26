@@ -8,8 +8,15 @@ import './App.css';
 
 // images
 import City from './assets/city.jpg';
+import ShowUserName from './Components/ShowUserName';
+
+// hooks
+import { useState } from 'react';
 
 function App() {
+  const name = 'Tereza';
+  const [userName] = useState('Maria');
+
   return (
     <div className="App">
       <h1>Avançando em React</h1>
@@ -24,6 +31,7 @@ function App() {
       <ManageData />
       <ListRender />
       <ConditionalRender />
+      <ShowUserName name={userName} />
     </div>
   );
 }
