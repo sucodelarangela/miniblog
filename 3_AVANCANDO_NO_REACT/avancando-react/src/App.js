@@ -2,20 +2,21 @@
 import ManageData from './Components/ManageData';
 import ListRender from './Components/ListRender';
 import ConditionalRender from './Components/ConditionalRender';
+import ShowUserName from './Components/ShowUserName';
+import CarDetails from './Components/CarDetails';
+import Fragment from './Components/Fragment';
 
 // styles
 import './App.css';
 
 // images
 import City from './assets/city.jpg';
-import ShowUserName from './Components/ShowUserName';
 
 // hooks
 import { useState } from 'react';
-import CarDetails from './Components/CarDetails';
 
 function App() {
-  const name = 'Tereza';
+  // const name = 'Tereza';
   const [userName] = useState('Maria');
 
   const cars = [
@@ -44,8 +45,9 @@ function App() {
       <CarDetails brand="Fiat" km={4500} color="Branco" newCar={false} />
       {/* Looping an array of objects */}
       {cars.map((car) => (
-        <CarDetails brand={car.brand} km={car.km} color={car.color} newCar={car.newCar} />
+        <CarDetails key={car.id} brand={car.brand} km={car.km} color={car.color} newCar={car.newCar} />
       ))}
+      <Fragment propFragment="teste" />
     </div>
   );
 }
