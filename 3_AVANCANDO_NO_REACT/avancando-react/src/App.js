@@ -7,6 +7,9 @@ import CarDetails from './Components/CarDetails';
 import Fragment from './Components/Fragment';
 import Container from './Components/Container';
 import ExecuteFunction from './Components/ExecuteFunction';
+import Message from './Components/Message';
+import ChangeMsgState from './Components/ChangeMsgState';
+import UserDetails from './Components/UserDetails';
 
 // styles
 import './App.css';
@@ -16,8 +19,6 @@ import City from './assets/city.jpg';
 
 // hooks
 import { useState } from 'react';
-import Message from './Components/Message';
-import ChangeMsgState from './Components/ChangeMsgState';
 
 function App() {
   // const name = 'Tereza';
@@ -39,6 +40,13 @@ function App() {
   const handleMessage = (msg) => {
     setMessage(msg);
   };
+
+  // Exercise
+  const people = [
+    { id: 1, name: "Angela", age: '37', profession: 'Arquiteta' },
+    { id: 2, name: "Tereza", age: '39', profession: 'Assistente Social' },
+    { id: 3, name: "João", age: '16', profession: 'Estudante' },
+  ];
 
   return (
     <div className="App">
@@ -78,6 +86,11 @@ function App() {
       {/* State Lift */}
       <Message msg={message} />
       <ChangeMsgState handleMessage={handleMessage} />
+
+      {/* Exercise */}
+      {people.map((user) => (
+        <UserDetails name={user.name} age={user.age} profession={user.profession} key={user.id} />
+      ))}
     </div>
   );
 }
