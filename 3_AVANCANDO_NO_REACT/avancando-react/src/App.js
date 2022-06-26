@@ -6,6 +6,7 @@ import './App.css';
 
 // images
 import City from './assets/city.jpg';
+import ListRender from './Components/ListRender';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <img src={City} alt="Cidade" />
       </div>
       <ManageData />
+      <ListRender />
     </div>
   );
 }
