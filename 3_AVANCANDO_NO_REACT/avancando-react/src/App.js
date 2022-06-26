@@ -12,6 +12,7 @@ import ShowUserName from './Components/ShowUserName';
 
 // hooks
 import { useState } from 'react';
+import CarDetails from './Components/CarDetails';
 
 function App() {
   const name = 'Tereza';
@@ -32,6 +33,7 @@ function App() {
       <ListRender />
       <ConditionalRender />
       <ShowUserName name={userName} />
+      <CarDetails brand="Volkswagen" km={100000} color="Azul" />
     </div>
   );
 }
