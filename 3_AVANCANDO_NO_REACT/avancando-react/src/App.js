@@ -16,6 +16,8 @@ import City from './assets/city.jpg';
 
 // hooks
 import { useState } from 'react';
+import Message from './Components/Message';
+import ChangeMsgState from './Components/ChangeMsgState';
 
 function App() {
   // const name = 'Tereza';
@@ -30,6 +32,13 @@ function App() {
   function showMessage() {
     console.log("Evento do componente pai");
   }
+
+  // State and function to deal with state lift
+  const [message, setMessage] = useState('');
+
+  const handleMessage = (msg) => {
+    setMessage(msg);
+  };
 
   return (
     <div className="App">
@@ -65,6 +74,10 @@ function App() {
       </Container>
 
       <ExecuteFunction myFunction={showMessage} />
+
+      {/* State Lift */}
+      <Message msg={message} />
+      <ChangeMsgState handleMessage={handleMessage} />
     </div>
   );
 }
