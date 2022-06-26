@@ -1,12 +1,13 @@
 // components
 import ManageData from './Components/ManageData';
+import ListRender from './Components/ListRender';
+import ConditionalRender from './Components/ConditionalRender';
 
 // styles
 import './App.css';
 
 // images
 import City from './assets/city.jpg';
-import ListRender from './Components/ListRender';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       </div>
       <ManageData />
       <ListRender />
+      <ConditionalRender />
     </div>
   );
 }
