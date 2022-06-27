@@ -1,0 +1,14 @@
+/* This is the 'global' css file. Every style set here will be reflected on all components. */
+
+/* This can be your reset.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica';
+  padding-bottom: 500px;
+}
+
+/* You can also style general components */
+h1 {
+  color: red;
+}
