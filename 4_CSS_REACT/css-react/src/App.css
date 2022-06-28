@@ -38,3 +38,15 @@
     transform: rotate(360deg);
   }
 }
+
+.red-title {
+  background-color: #000;
+  color: red;
+  padding: 15px;
+  border: 5px solid red;
+}
+
+.title {
+  background-color: #000;
+  color: #fff;
+}
