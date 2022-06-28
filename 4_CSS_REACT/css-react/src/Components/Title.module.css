@@ -1,0 +1,9 @@
+.my_title {
+  color: orange;
+  background: #111;
+  padding: 10px;
+}
+
+/* CSS modules is a scoped method, that is, it does not reflect on other components. It's exclusive.
+The file must follow this name: Component.module.css and it must bem imported in the component. 
+Normally, to avoid inconsistencies with javascript, word separation is made by using "_" instead o "-" */
