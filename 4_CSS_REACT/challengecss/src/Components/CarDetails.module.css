@@ -1,0 +1,38 @@
+.car_info {
+  margin: 0 auto;
+  margin-bottom: 16px;
+  width: 30%;
+  padding: 32px;
+  border: 2px solid tomato;
+  border-radius: 8px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.car_info:hover {
+  box-shadow: 2px 2px 2px tomato;
+  transform: scale(1.02);
+}
+
+.car_name {
+  font-weight: bold;
+  font-size: 18px;
+  list-style: none;
+  padding-bottom: 8px;
+}
+
+.car_details {
+  font-size: 16px;
+  list-style: square;
+}
+
+.highlight {
+  margin-top: 16px;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: crimson;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
