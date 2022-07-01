@@ -1,7 +1,27 @@
 // styles
 import './Game.css'
 
+// hooks
+import { useState, useRef } from 'react'
+
 const Game = ({ verifyLetter, pickedWord, pickedCategory, letters, guessedLetters, wrongLetters, guesses, score }) => {
+  const [letter, setLetter] = useState('')
+
+  // useRef works as a querySelector. Here we save the ref in a variable and in the input tag we use the attribute "ref" to set the variable name and link the element to the hook
+  const letterInputRef = useRef(null)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // Verify the letter on input
+    verifyLetter(letter)
+
+    // clears the input
+    setLetter('')
+
+    // focus again on the input
+    letterInputRef.current.focus()
+  }
+
   return (
     <div className="game">
       <p className="point">
@@ -23,8 +43,15 @@ const Game = ({ verifyLetter, pickedWord, pickedCategory, letters, guessedLetter
       </div>
       <div className="letterContainer">
         <p>Tente adivinhar uma letra da palavra:</p>
-        <form>
-          <input type="text" name='letter' maxLength='1' required />
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name='letter'
+            maxLength='1'
+            required
+            onChange={(e) => setLetter(e.target.value)}
+            value={letter}
+            ref={letterInputRef} />
           <button>Jogar!</button>
         </form>
       </div>
