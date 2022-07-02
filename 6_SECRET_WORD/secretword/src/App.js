@@ -31,7 +31,7 @@ function App() {
   const [score, setScore] = useState(50);
 
   // pickind word and category
-  const pickWordAndCategory = () => {
+  const pickWordAndCategory = useCallback(() => {
     // pick a random category
     const categories = Object.keys(words);
     const category = categories[Math.floor(Math.random() * Object.keys(categories).length)];
@@ -40,10 +40,13 @@ function App() {
     const word = words[category][Math.floor(Math.random() * words[category].length)];
 
     return { word, category };
-  };
+  }, [words]);
 
   // Starting the game
-  const startGame = () => {
+  const startGame = useCallback(() => {
+    // clear all letters
+    clearLetterStates();
+
     // destructuring
     const { word, category } = pickWordAndCategory();
 
@@ -56,7 +59,7 @@ function App() {
     setPickedCategory(category);
     setLetters(wordLetters);
     setGameStage(stages[1].name);
-  };
+  }, [pickWordAndCategory]);
 
   // Processing the letter input
   const verifyLetter = (letter) => {
@@ -86,6 +89,7 @@ function App() {
   };
 
   // useEffect tracks changes in the application. In this case we will use it to track when the guesses end up, so we can reset all states and render the game over page
+  // check if guesses ended
   useEffect(() => {
     if (guesses <= 0) {
       // reset all states
@@ -95,6 +99,21 @@ function App() {
       setGameStage(stages[2].name);
     }
   }, [guesses]);
+
+  // check win condition
+  useEffect(() => {
+    // comparing user letters with word letters. Necessary to avoid repetition of letters, so we create a new array of letters based on "letters" state using Set to avoid repetition (as in "ovo", for example, the array contains only "o" and "v")
+    const uniqueLetters = [...new Set(letters)];
+
+    // win condition
+    if (guessedLetters.length === uniqueLetters.length) {
+      // add score
+      setScore((currentScore) => currentScore += 100);
+
+      // restart the game with new word
+      startGame();
+    }
+  }, [guessedLetters, letters, startGame]);
 
   // Retry the game
   const retry = () => {
