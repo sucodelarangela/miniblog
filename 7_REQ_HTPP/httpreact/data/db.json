@@ -14,6 +14,26 @@
       "id": 3,
       "name": "Boné aba reta",
       "price": 29.9
+    },
+    {
+      "name": "teste",
+      "price": "12",
+      "id": 4
+    },
+    {
+      "name": "teste",
+      "price": "12",
+      "id": 5
+    },
+    {
+      "name": "Capa de Chuva",
+      "price": "50.50",
+      "id": 6
+    },
+    {
+      "name": "Mouse",
+      "price": "25",
+      "id": 7
     }
   ]
 }
