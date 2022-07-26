@@ -38,7 +38,15 @@ function App() {
       body: JSON.stringify(product)
     });
 
+    // dynamic loading of items from api
+    // prevProducts is the current state of the products api. Then we use an arrow function and we create a new array with spread operator and the new product together
+    const addedProducts = await res.json();
 
+    setProducts((prevProducts) => [...prevProducts, addedProducts]);
+
+    // reseting the inputs
+    setName('');
+    setPrice('');
   };
 
   return (

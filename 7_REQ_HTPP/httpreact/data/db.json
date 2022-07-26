@@ -34,6 +34,21 @@
       "name": "Mouse",
       "price": "25",
       "id": 7
+    },
+    {
+      "name": "Chuchu",
+      "price": "7",
+      "id": 8
+    },
+    {
+      "name": "Teclado",
+      "price": "110",
+      "id": 9
+    },
+    {
+      "name": "Cadeira",
+      "price": "200",
+      "id": 10
     }
   ]
 }
