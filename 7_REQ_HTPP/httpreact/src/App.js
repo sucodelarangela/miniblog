@@ -6,13 +6,13 @@ import { useState } from 'react';
 import { useFetch } from './hooks/useFetch';
 
 function App() {
-  const [products, setProducts] = useState([]);
+  // const [products, setProducts] = useState([]);
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
   const url = 'http://localhost:3000/products';
 
   // retrieving data with custom hook by destructuring it
-  const { data: items, httpConfig } = useFetch(url);
+  const { data: items, httpConfig, loading } = useFetch(url);
 
   // old way of retrieving data. it happens only once because dependency array is empty
   // useEffect(() => {
@@ -61,13 +61,17 @@ function App() {
   return (
     <div className="App">
       <h1>Lista de Produtos</h1>
-      <ul>
-        {/* showing products fecthed from api on page */}
-        {/* we've changed 'products' by 'items' to map data fetched by useFetch. To avoid errors (items = null), we make a validation with && */}
-        {items && items.map((product) => (
-          <li key={product.id}>{product.name} - R$: {product.price}</li>
-        ))}
-      </ul>
+      {/* loading state */}
+      {loading && <p>Carregando dados...</p>}
+      {!loading && (
+        <ul>
+          {/* showing products fecthed from api on page */}
+          {/* we've changed 'products' by 'items' to map data fetched by useFetch. To avoid errors (items = null), we make a validation with && */}
+          {items && items.map((product) => (
+            <li key={product.id}>{product.name} - R$: {product.price}</li>
+          ))}
+        </ul>
+      )}
       {/* form to add new products */}
       <div className="add-product">
         <form onSubmit={handleSubmit}>
