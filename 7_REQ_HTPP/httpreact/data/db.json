@@ -16,29 +16,9 @@
       "price": 29.9
     },
     {
-      "name": "teste",
-      "price": "12",
-      "id": 4
-    },
-    {
-      "name": "teste",
-      "price": "12",
-      "id": 5
-    },
-    {
-      "name": "Capa de Chuva",
-      "price": "50.50",
-      "id": 6
-    },
-    {
       "name": "Mouse",
       "price": "25",
       "id": 7
-    },
-    {
-      "name": "Chuchu",
-      "price": "7",
-      "id": 8
     },
     {
       "name": "Teclado",
@@ -64,31 +44,6 @@
       "name": "Cabo HDMI",
       "price": "10",
       "id": 13
-    },
-    {
-      "name": "Cabo HDMI",
-      "price": "10",
-      "id": 14
-    },
-    {
-      "name": "Suporte para microfone",
-      "price": "60",
-      "id": 15
-    },
-    {
-      "name": "Suporte para microfone 2",
-      "price": "70",
-      "id": 16
-    },
-    {
-      "name": "Suporte para microfone 2",
-      "price": "70",
-      "id": 17
-    },
-    {
-      "name": "Suporte para microfone 3",
-      "price": "75",
-      "id": 18
     }
   ]
 }

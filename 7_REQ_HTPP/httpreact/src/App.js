@@ -58,6 +58,11 @@ function App() {
     setPrice('');
   };
 
+  const handleDelete = async (id) => {
+    const productId = `${url}/${id}`;
+    httpConfig(productId, "DELETE");
+  };
+
   return (
     <div className="App">
       <h1>Lista de Produtos</h1>
@@ -69,7 +74,7 @@ function App() {
           {/* showing products fecthed from api on page */}
           {/* we've changed 'products' by 'items' to map data fetched by useFetch. To avoid errors (items = null), we make a validation with && */}
           {items && items.map((product) => (
-            <li key={product.id}>{product.name} - R$: {product.price}</li>
+            <li key={product.id}>{product.name} - R$: {product.price} <button onClick={() => handleDelete(product.id)}>Excluir</button></li>
           ))}
         </ul>
       )}

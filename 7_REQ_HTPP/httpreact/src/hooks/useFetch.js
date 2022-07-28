@@ -6,7 +6,7 @@ export const useFetch = (url) => {
     const [data, setData] = useState(null);
     // states for refactoring post method
     const [config, setConfig] = useState(null); // for headers
-    const [method, setMethod] = useState(null); //GET or POST
+    const [method, setMethod] = useState(null); //GET or POST or DELETE
     const [callFetch, setCallFetch] = useState(false);
     // loading state
     const [loading, setLoading] = useState(false);
@@ -16,15 +16,20 @@ export const useFetch = (url) => {
     const httpConfig = (data, method) => {
         if (method === 'POST') {
             setConfig({
-                method, // the same as method: "POST"
+                method, // the same as method: "POST" for example
                 headers: {
                     "Content-type": "application/json"
                 },
                 body: JSON.stringify(data)
             });
+        } else if (method === 'DELETE') {
+            setConfig(
+                fetch(data, { method: method })
+            );
 
-            setMethod(method);
         }
+        setMethod(method);
+        // when we setConfig, we activate useEffect to reload the list.
     };
 
     // making requisitions from api
@@ -53,7 +58,7 @@ export const useFetch = (url) => {
     // refactoring POST
     useEffect(() => {
         const httpRequest = async () => {
-            if (method === 'POST') {
+            if (method === 'POST' || method === 'DELETE') {
                 let fetchOptions = [url, config];
 
                 const res = await fetch(...fetchOptions);
