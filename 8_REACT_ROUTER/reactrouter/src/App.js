@@ -14,7 +14,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <section className="App">
       <h1>React Router</h1>
       <Router>
         {/* The Navbar contains react-router-dom elements, so it's mandatory it's used inside the Router tag */}
@@ -26,7 +26,7 @@ function App() {
           <Route path='/products/:id' element={<Product />} />
         </Routes>
       </Router>
-    </div>
+    </section>
   );
 }
 
