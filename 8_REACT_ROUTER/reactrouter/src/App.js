@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // components
 import Navbar from './components/Navbar';
+import SearchForm from './components/SearchForm';
 
 // pages
 import Home from './pages/Home';
@@ -13,6 +14,7 @@ import About from './pages/About';
 import Product from './pages/Product';
 import Info from './pages/Info';
 import NotFound from './pages/NotFound';
+import Search from './pages/Search';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <Router>
         {/* The Navbar contains react-router-dom elements, so it's mandatory it's used inside the Router tag */}
         <Navbar />
+        {/* Search */}
+        <SearchForm />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
@@ -29,6 +33,8 @@ function App() {
           {/* Nested route */}
           <Route path='/products/:id/info' element={<Info />} />
           {/* No match route: usually the last route in this list */}
+          {/* Search */}
+          <Route path='/search' element={<Search />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </Router>

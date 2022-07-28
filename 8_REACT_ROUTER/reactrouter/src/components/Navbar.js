@@ -2,7 +2,7 @@
 import './Navbar.sass';
 
 // dependencies
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 /*
 Instead of Link, we will use NavLink to add an .active class on the Navbar to help us identify the current page
