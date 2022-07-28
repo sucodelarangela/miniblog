@@ -12,7 +12,7 @@ function App() {
   const url = 'http://localhost:3000/products';
 
   // retrieving data with custom hook by destructuring it
-  const { data: items, httpConfig, loading } = useFetch(url);
+  const { data: items, httpConfig, loading, error } = useFetch(url);
 
   // old way of retrieving data. it happens only once because dependency array is empty
   // useEffect(() => {
@@ -63,7 +63,8 @@ function App() {
       <h1>Lista de Produtos</h1>
       {/* loading state */}
       {loading && <p>Carregando dados...</p>}
-      {!loading && (
+      {error && <p>{error}</p>}
+      {!error && (
         <ul>
           {/* showing products fecthed from api on page */}
           {/* we've changed 'products' by 'items' to map data fetched by useFetch. To avoid errors (items = null), we make a validation with && */}
@@ -91,7 +92,8 @@ function App() {
               name="price"
               onChange={(e) => setPrice(e.target.value)} />
           </label>
-          <input type="submit" value="Criar" />
+          {loading && <input type="submit" disabled value="Aguarde" />}
+          {!loading && <input type="submit" value="Criar" />}
         </form>
       </div>
     </div>

@@ -64,6 +64,31 @@
       "name": "Cabo HDMI",
       "price": "10",
       "id": 13
+    },
+    {
+      "name": "Cabo HDMI",
+      "price": "10",
+      "id": 14
+    },
+    {
+      "name": "Suporte para microfone",
+      "price": "60",
+      "id": 15
+    },
+    {
+      "name": "Suporte para microfone 2",
+      "price": "70",
+      "id": 16
+    },
+    {
+      "name": "Suporte para microfone 2",
+      "price": "70",
+      "id": 17
+    },
+    {
+      "name": "Suporte para microfone 3",
+      "price": "75",
+      "id": 18
     }
   ]
 }

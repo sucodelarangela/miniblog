@@ -10,6 +10,8 @@ export const useFetch = (url) => {
     const [callFetch, setCallFetch] = useState(false);
     // loading state
     const [loading, setLoading] = useState(false);
+    // treating errors
+    const [error, setError] = useState(null);
 
     const httpConfig = (data, method) => {
         if (method === 'POST') {
@@ -30,12 +32,17 @@ export const useFetch = (url) => {
         const fetchData = async () => {
             setLoading(true);
 
-            const res = await fetch(url);
+            try {
+                const res = await fetch(url);
 
-            const json = await res.json();
+                const json = await res.json();
 
-            // add fetched data to states
-            setData(json);
+                // add fetched data to states
+                setData(json);
+            } catch (error) {
+                console.log(error.message);
+                setError('Houve um problema ao carregar os dados!');
+            }
 
             setLoading(false);
         };
@@ -61,5 +68,5 @@ export const useFetch = (url) => {
     }, [config, method, url]);
 
     // we are exporting the useFetch hook, but we also need to export the data requested from the api because we will use it in the future. In this case, we use return, because we can only have one export per file:
-    return { data, httpConfig, loading };
+    return { data, httpConfig, loading, error };
 };
