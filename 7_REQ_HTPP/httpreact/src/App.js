@@ -1,6 +1,6 @@
 import './App.css';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 // importing custom hook
 import { useFetch } from './hooks/useFetch';
@@ -12,7 +12,7 @@ function App() {
   const url = 'http://localhost:3000/products';
 
   // retrieving data with custom hook by destructuring it
-  const { data: items } = useFetch(url);
+  const { data: items, httpConfig } = useFetch(url);
 
   // old way of retrieving data. it happens only once because dependency array is empty
   // useEffect(() => {
@@ -36,19 +36,22 @@ function App() {
       price
     };
 
-    const res = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(product)
-    });
+    // old way of dynamic loading items
+    // const res = await fetch(url, {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify(product)
+    // });
 
     // dynamic loading of items from api
     // prevProducts is the current state of the products api. Then we use an arrow function and we create a new array with spread operator and the new product together
-    const addedProducts = await res.json();
+    // const addedProducts = await res.json();
 
-    setProducts((prevProducts) => [...prevProducts, addedProducts]);
+    // setProducts((prevProducts) => [...prevProducts, addedProducts]);
+
+    httpConfig(product, "POST");
 
     // reseting the inputs
     setName('');
