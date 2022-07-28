@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Product from './pages/Product';
 import Info from './pages/Info';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
           <Route path='/products/:id' element={<Product />} />
           {/* Nested route */}
           <Route path='/products/:id/info' element={<Info />} />
+          {/* No match route: usually the last route in this list */}
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </Router>
     </section>
@@ -34,3 +37,11 @@ function App() {
 }
 
 export default App;
+
+/*
+About the no-match-route:
+In this project, if we access a route that is not defined above, we will have the NotFound page loaded.
+For instance: /hauhsuahs returns the 404 page.
+
+But if we access a product page with a non existent id, we still have the Product page loading, because the route exists. So, to have the NotFound page loaded, we will have another approach in the future.
+*/
