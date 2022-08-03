@@ -1,12 +1,16 @@
-import { useContext } from "react";
+// import { useContext } from "react";
+// import { CounterContext } from "../context/CounterContext";
+// import new useContext hook - REFACTOR
+import { useCounterContext } from "../hooks/useCounterContext";
 
 import ChangeCounter from "../components/ChangeCounter";
 
-import { CounterContext } from "../context/CounterContext";
-
 const Home = () => {
     // destructuring and using CounterContext. counter value is provided by CounterContextProvider (duh)
-    const { counter } = useContext(CounterContext);
+    // const { counter } = useContext(CounterContext);
+
+    // using useCounterContext hook
+    const { counter } = useCounterContext();
 
     return (
         <div>
