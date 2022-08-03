@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.sass';
 import App from './App';
 
+import { CounterContextProvider } from './context/CounterContext';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* Embracing the app with the context provider. Children allows app to render everything */}
+    <CounterContextProvider>
+      <App />
+    </CounterContextProvider>
   </React.StrictMode>
 );
 
