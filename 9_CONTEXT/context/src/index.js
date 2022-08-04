@@ -4,13 +4,16 @@ import './index.sass';
 import App from './App';
 
 import { CounterContextProvider } from './context/CounterContext';
+import { TitleColorContextProvider } from './context/TitleColorContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* Embracing the app with the context provider. Children allows app to render everything */}
     <CounterContextProvider>
-      <App />
+      <TitleColorContextProvider>
+        <App />
+      </TitleColorContextProvider>
     </CounterContextProvider>
   </React.StrictMode>
 );
