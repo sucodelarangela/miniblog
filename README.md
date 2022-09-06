@@ -60,6 +60,14 @@ _English version_
 
 </div>
 
+## 🔎 Overview
+
+In this repository you will find all codes developed during the React course from the instructor Matheus Battisti, developer from the blog [Hora de Codar / Time to Code](https://www.horadecodar.com.br/).
+
+Some topics covered in the training course: React fundamentals; JSX; Componentization; CSS with React (Component, CSS Modules, global CSS); Forms with React (Hooks, events, validations, APIs); HTTP requisitions (sending and receiving data from an API); React Router; Context API; React Hooks (useState, useEffect, useRef and all others); Node.js (Express); MongoDB with Mongoose (NoSQL database); Firebase (complete Google solution, with API, Database and Authentication); JavaScript ES6+; APIs creation; modern JavaScript; TypeScript.
+
+Some applications will also be developed during the course.
+
 ## 📈 My Progress
 
 - [x] [Section 1: Intro](https://github.com/sucodelarangela/curso_react_udemy/tree/main/1_INTRO/hello-world)
