@@ -15,7 +15,7 @@ Também serão desenvolvidas aplicações completas ao longo do curso.
 | 🪧 Vitrine.Dev    |     |
 | ---------------- | --- |
 | ✨ Nome          | **Exercícios de React** - Udemy - Matheus Battisti |
-| 🏷️ Tecnologias   | React, JavaScript, Sass, Node, MongoDB, Firebase, Redux, TypeScript |
+| 🏷️ Tecnologias   | React, Sass, Node, MongoDB, Firebase, Redux, JavaScript, TypeScript |
 | 🚀 URL           | [**http://curso-react-udemy.vercel.app/**](http://curso-react-udemy.vercel.app/) |
 | 🔥 Link do curso | [**React do Zero à Maestria**](https://www.udemy.com/course/react-do-zero-a-maestria-c-hooks-router-api-projetos/) |
 
