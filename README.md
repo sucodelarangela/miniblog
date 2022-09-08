@@ -1,4 +1,4 @@
-<div id='top'> 
+<div id='top'>
 
 # Exercícios do curso de React | Udemy - Matheus Battisti (em andamento)
 
@@ -12,11 +12,11 @@ Alguns dos tópicos abordados neste curso: Fundamentos do React; JSX; Componenti
 
 Também serão desenvolvidas aplicações completas ao longo do curso.
 
-| 🪧 Vitrine.Dev    |     |
-| ---------------- | --- |
-| ✨ Nome          | **Exercícios de React** - Udemy - Matheus Battisti |
-| 🏷️ Tecnologias   | React, Sass, Node, MongoDB, Firebase, Redux, JavaScript, TypeScript |
-| 🚀 URL           | [**http://curso-react-udemy.vercel.app/**](http://curso-react-udemy.vercel.app/) |
+| 🪧 Vitrine.Dev   |                                                                                                                    |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------ |
+| ✨ Nome          | **Exercícios de React** - Udemy - Matheus Battisti                                                                 |
+| 🏷️ Tecnologias   | React, Sass, Node, MongoDB, Firebase, Redux, JavaScript, TypeScript                                                |
+| 🚀 URL           | [**http://curso-react-udemy.vercel.app/**](http://curso-react-udemy.vercel.app/)                                   |
 | 🔥 Link do curso | [**React do Zero à Maestria**](https://www.udemy.com/course/react-do-zero-a-maestria-c-hooks-router-api-projetos/) |
 
 ![](https://raw.githubusercontent.com/sucodelarangela/curso_react_udemy/main/6_SECRET_WORD/secretword/public/projeto-react-1.png#vitrinedev)
@@ -31,6 +31,7 @@ Também serão desenvolvidas aplicações completas ao longo do curso.
 
 ## 📈 Progresso do curso
 
+<!-- prettier-ignore -->
 - [x] [Módulo 1: Introdução](https://github.com/sucodelarangela/curso_react_udemy/tree/main/1_INTRO/hello-world)
 - [x] [Módulo 2: Fundamentos](https://github.com/sucodelarangela/curso_react_udemy/tree/main/2_FUNDAMENTOS/fundamentos)
 - [x] [Módulo 3: Hooks, listas, if/else, props](https://github.com/sucodelarangela/curso_react_udemy/tree/main/3_AVANCANDO_NO_REACT/avancando-react)
@@ -40,7 +41,7 @@ Também serão desenvolvidas aplicações completas ao longo do curso.
 - [x] [Módulo 7: Requisições HTTP](https://github.com/sucodelarangela/curso_react_udemy/tree/main/7_REQ_HTPP/httpreact)
 - [x] [Módulo 8: React Router](https://github.com/sucodelarangela/curso_react_udemy/tree/main/8_REACT_ROUTER/reactrouter)
 - [x] [Módulo 9: Context API](https://github.com/sucodelarangela/curso_react_udemy/tree/main/9_CONTEXT/context)
-- [ ] Módulo 10: **Projeto 2** - Miniblog (Firebase, Router e Context)
+- [ ] [Módulo 10: **Projeto 2** - Miniblog (Firebase, Router e Context)](https://github.com/sucodelarangela/curso_react_udemy/tree/main/10_MINIBLOG/miniblog) `- em andamento`
 - [ ] Módulo 11: Entendendo Hooks
 - [ ] Módulo 12: **Projeto 3** - ReactGram (Redux, Express, MongoDB, Mongoose)
 - [ ] Módulo 13: Apêndice A: JavaScript moderno
@@ -70,24 +71,24 @@ Some applications will also be developed during the course.
 
 ## 📈 My Progress
 
-- [x] [Section 1: Intro](https://github.com/sucodelarangela/curso_react_udemy/tree/main/1_INTRO/hello-world)
-- [x] [Section 2: Fundamentals](https://github.com/sucodelarangela/curso_react_udemy/tree/main/2_FUNDAMENTOS/fundamentos)
-- [x] [Section 3: Hooks, lists, if/else, props](https://github.com/sucodelarangela/curso_react_udemy/tree/main/3_AVANCANDO_NO_REACT/avancando-react)
-- [x] [Section 4: CSS with React](https://github.com/sucodelarangela/curso_react_udemy/tree/main/4_CSS_REACT)
-- [x] [Section 5: Forms with React](https://github.com/sucodelarangela/curso_react_udemy/tree/main/5_FORM_REACT/forms)
-- [x] [Section 6: **Project 1** - Secret Word](https://github.com/sucodelarangela/curso_react_udemy/tree/main/6_SECRET_WORD/secretword)
-- [x] [Section 7: HTTP Requisitions](https://github.com/sucodelarangela/curso_react_udemy/tree/main/7_REQ_HTPP/httpreact)
-- [x] [Section 8: React Router](https://github.com/sucodelarangela/curso_react_udemy/tree/main/8_REACT_ROUTER/reactrouter)
-- [x] [Section 9: Context API](https://github.com/sucodelarangela/curso_react_udemy/tree/main/9_CONTEXT/context)
-- [ ] Section 10: **Project 2** - Miniblog (Firebase, Router, Context)
-- [ ] Section 11: Understanding Hooks
-- [ ] Section 12: **Project 3** - ReactGram (Redux, Express, MongoDB, Mongoose)
-- [ ] Section 13: Apendix A: modern JavaScript
-- [ ] Section 14: Apendix B: Introduction to APIs
-- [ ] Section 15: Apendix C: TypeScript setup
-- [ ] Section 16: Apendix D: React with TypeScript
-- [ ] Section 17: Apendix E: React App with TypeScript
-- [ ] Section 18: Conclusion and next steps
+-   [x] [Section 1: Intro](https://github.com/sucodelarangela/curso_react_udemy/tree/main/1_INTRO/hello-world)
+-   [x] [Section 2: Fundamentals](https://github.com/sucodelarangela/curso_react_udemy/tree/main/2_FUNDAMENTOS/fundamentos)
+-   [x] [Section 3: Hooks, lists, if/else, props](https://github.com/sucodelarangela/curso_react_udemy/tree/main/3_AVANCANDO_NO_REACT/avancando-react)
+-   [x] [Section 4: CSS with React](https://github.com/sucodelarangela/curso_react_udemy/tree/main/4_CSS_REACT)
+-   [x] [Section 5: Forms with React](https://github.com/sucodelarangela/curso_react_udemy/tree/main/5_FORM_REACT/forms)
+-   [x] [Section 6: **Project 1** - Secret Word](https://github.com/sucodelarangela/curso_react_udemy/tree/main/6_SECRET_WORD/secretword)
+-   [x] [Section 7: HTTP Requisitions](https://github.com/sucodelarangela/curso_react_udemy/tree/main/7_REQ_HTPP/httpreact)
+-   [x] [Section 8: React Router](https://github.com/sucodelarangela/curso_react_udemy/tree/main/8_REACT_ROUTER/reactrouter)
+-   [x] [Section 9: Context API](https://github.com/sucodelarangela/curso_react_udemy/tree/main/9_CONTEXT/context)
+-   [ ] Section 10: **Project 2** - Miniblog (Firebase, Router, Context)
+-   [ ] Section 11: Understanding Hooks
+-   [ ] Section 12: **Project 3** - ReactGram (Redux, Express, MongoDB, Mongoose)
+-   [ ] Section 13: Apendix A: modern JavaScript
+-   [ ] Section 14: Apendix B: Introduction to APIs
+-   [ ] Section 15: Apendix C: TypeScript setup
+-   [ ] Section 16: Apendix D: React with TypeScript
+-   [ ] Section 17: Apendix E: React App with TypeScript
+-   [ ] Section 18: Conclusion and next steps
 
 <a href='#top'>🔼 Back to top</a>
 
