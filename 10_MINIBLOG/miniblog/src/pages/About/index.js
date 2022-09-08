@@ -1,5 +1,5 @@
 // styles
-import styles from './About.module.sass';
+// import styles from './About.module.sass';
 
 const About = () => {
     return (
