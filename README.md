@@ -80,7 +80,7 @@ Some applications will also be developed during the course.
 -   [x] [Section 7: HTTP Requisitions](https://github.com/sucodelarangela/curso_react_udemy/tree/main/7_REQ_HTPP/httpreact)
 -   [x] [Section 8: React Router](https://github.com/sucodelarangela/curso_react_udemy/tree/main/8_REACT_ROUTER/reactrouter)
 -   [x] [Section 9: Context API](https://github.com/sucodelarangela/curso_react_udemy/tree/main/9_CONTEXT/context)
--   [ ] Section 10: **Project 2** - Miniblog (Firebase, Router, Context)
+-   [ ] [Section 10: **Project 2** - Miniblog (Firebase, Router, Context)](https://github.com/sucodelarangela/curso_react_udemy/tree/main/10_MINIBLOG/miniblog) `- ongoing`
 -   [ ] Section 11: Understanding Hooks
 -   [ ] Section 12: **Project 3** - ReactGram (Redux, Express, MongoDB, Mongoose)
 -   [ ] Section 13: Apendix A: modern JavaScript
