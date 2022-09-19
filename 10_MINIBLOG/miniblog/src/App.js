@@ -1,6 +1,6 @@
 import './App.sass';
 
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { onAuthStateChanged } from 'firebase/auth';
 import { useAuthentication } from './hooks/useAuthentication';
 import { useEffect, useState } from 'react';
@@ -17,6 +17,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import CreatePost from './pages/CreatePost';
+import Dashboard from './pages/Dashboard';
 
 
 function App() {
@@ -41,7 +43,8 @@ function App() {
 
   return (
     <main className="App">
-      <AuthProvider value={user}>
+      {/* after fetching user info, send it to context to feed other parts of the app */}
+      <AuthProvider value={{ user }}>
         <Router>
           <Navbar />
           <div className="container">
@@ -50,6 +53,8 @@ function App() {
               <Route path='/about' element={<About />} />
               <Route path='/login' element={<Login />} />
               <Route path='/register' element={<Register />} />
+              <Route path='/posts/create' element={<CreatePost />} />
+              <Route path='/dashboard' element={<Dashboard />} />
             </Routes>
           </div>
           <Footer />
