@@ -18,6 +18,7 @@ const Navbar = () => {
                 <li>
                     <NavLink to='/' className={({ isActive }) => (isActive ? styles.active : '')}>Home</NavLink>
                 </li>
+                {/* if user is not logged, shows Enter and Register pages */}
                 {!user && (
                     <>
                         <li>
@@ -28,6 +29,7 @@ const Navbar = () => {
                         </li>
                     </>
                 )}
+                {/* if user is logged, shows New Blog and Dashboard pages */}
                 {user && (
                     <>
                         <li>

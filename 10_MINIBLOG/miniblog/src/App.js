@@ -1,6 +1,6 @@
 import './App.sass';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { onAuthStateChanged } from 'firebase/auth';
 import { useAuthentication } from './hooks/useAuthentication';
 import { useEffect, useState } from 'react';
@@ -51,10 +51,10 @@ function App() {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<About />} />
-              <Route path='/login' element={<Login />} />
-              <Route path='/register' element={<Register />} />
-              <Route path='/posts/create' element={<CreatePost />} />
-              <Route path='/dashboard' element={<Dashboard />} />
+              <Route path='/login' element={!user ? <Login /> : <Navigate to='/' />} />
+              <Route path='/register' element={!user ? <Register /> : <Navigate to='/' />} />
+              <Route path='/posts/create' element={user ? <CreatePost /> : <Navigate to='/login' />} />
+              <Route path='/dashboard' element={user ? <Dashboard /> : <Navigate to='/login' />} />
             </Routes>
           </div>
           <Footer />
