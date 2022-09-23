@@ -3,10 +3,12 @@ import { useState } from 'react';
 
 // styles
 import styles from './Home.module.sass';
+import { useFetchDocs } from '../../hooks/useFetchDocs';
+import PostDetail from '../../components/PostDetail';
 
 const Home = () => {
     const [query, setQuery] = useState('');
-    const [posts] = useState([]);
+    const { docs: posts, loading } = useFetchDocs('posts');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -20,7 +22,10 @@ const Home = () => {
                 <button className='btn btn-dark'>Pesquisar</button>
             </form>
             <div>
-                <h1>Posts...</h1>
+                {loading && <p>Carregando...</p>}
+                {posts && posts.map((post) => (
+                    <PostDetail key={post.id} post={post} />
+                ))}
                 {posts && posts.length === 0 && (
                     <div className={styles.noposts}>
                         <p>Não foram encontrados posts</p>
