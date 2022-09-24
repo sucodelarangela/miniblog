@@ -4,11 +4,11 @@ import styles from './PostDetail.module.sass';
 
 const PostDetail = ({ post }) => {
     return (
-        <div>
+        <div className={styles.post_detail}>
             <img src={post.image} alt={post.title} />
             <h2>{post.title}</h2>
-            <p>{post.createdBy}</p>
-            <div>
+            <p className={styles.createdby}>{post.createdBy}</p>
+            <div className={styles.tags}>
                 {post.tagsArr.map((tag) => (
                     <p key={tag}>
                         <span>#</span>
