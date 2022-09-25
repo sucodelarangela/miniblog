@@ -22,8 +22,14 @@ export const useFetchDocs = (docCollection, search = null, uid = null) => {
             try {
                 let q;
 
-                // query the collection ordered by date of creation in descending order
-                q = await query(collectionRef, orderBy('createdAt', 'desc'));
+                if (search) {
+                    // query the collection that contains the search value
+                    q = await query(collectionRef, where('tagsArr', 'array-contains', search), orderBy('createdAt', 'desc'));
+                } else {
+                    // query the collection ordered by date of creation in descending order
+                    q = await query(collectionRef, orderBy('createdAt', 'desc'));
+                }
+
 
                 // onSnapshot maps the data and updates whenever some data is changed.
                 // querySnapshot is a method from firebase
