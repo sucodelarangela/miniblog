@@ -25,6 +25,9 @@ export const useFetchDocs = (docCollection, search = null, uid = null) => {
                 if (search) {
                     // query the collection that contains the search value
                     q = await query(collectionRef, where('tagsArr', 'array-contains', search), orderBy('createdAt', 'desc'));
+                } else if (uid) {
+                    // query the collection that contains the search value
+                    q = await query(collectionRef, where('uid', '==', uid), orderBy('createdAt', 'desc'));
                 } else {
                     // query the collection ordered by date of creation in descending order
                     q = await query(collectionRef, orderBy('createdAt', 'desc'));
