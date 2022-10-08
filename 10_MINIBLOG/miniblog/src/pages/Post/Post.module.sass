@@ -1,18 +1,21 @@
 .post_container
-    text-align: center
-
-.post_container img
-    max-width: 600px
-
-.post_container h3
-    margin-bottom: 2em
-
-.post_container .tags
     display: flex
-    justify-content: center
-
-.tags p
-    margin-right: 1em
-
-.tags span
-    font-weight: bold
+    flex-direction: column
+    align-items: center
+    text-align: center
+    & h1, & p
+        max-width: 800px
+    & img
+        width: 100%
+        max-width: 600px
+    & p
+        text-align: left
+    & h3
+        margin-bottom: 2em
+    & .tags
+        display: flex
+        justify-content: center
+        & p
+            margin-right: 1em
+        & span
+            font-weight: bold
