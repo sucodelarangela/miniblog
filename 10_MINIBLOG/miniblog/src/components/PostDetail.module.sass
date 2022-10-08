@@ -1,6 +1,10 @@
+@use '../mixins'
+
 .post_detail
+    width: 100%
+    max-width: 600px
     margin-bottom: 2em
-    & img, & h2
+    & img
         width: 100%
         max-width: 600px
     & h2
@@ -8,6 +12,7 @@
     & .tags
         margin-bottom: 1.2em
         display: flex
+        flex-wrap: wrap
         & p
             margin-right: .5em
         & span

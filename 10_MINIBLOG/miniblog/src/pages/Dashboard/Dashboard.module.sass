@@ -1,3 +1,5 @@
+@use '../../mixins'
+
 .dashboard
     text-align: center
     display: flex
@@ -23,6 +25,8 @@
     justify-content: space-between
     width: 80%
     padding: 10px
+    @include mixins.tablet
+        gap: 2em
 
 .post_header
     font-weight: bold
@@ -38,3 +42,9 @@
         height: 30px
         width: 100px
         font-size: .7em
+        @include mixins.tablet
+            display: flex
+            flex-direction: column
+            height: auto
+            width: auto
+            margin: 5px 0

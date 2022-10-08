@@ -1,3 +1,5 @@
+@use '../mixins'
+
 .footer
     height: 250px
     display: flex
@@ -5,3 +7,5 @@
     align-items: center
     justify-content: center
     background-color: #edf3f6
+    @include mixins.mobile
+        padding: 0 2em
