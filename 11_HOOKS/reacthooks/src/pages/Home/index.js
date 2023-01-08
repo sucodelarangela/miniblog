@@ -9,6 +9,7 @@ import { HookUseRef } from "components/HookUseRef";
 import { HookUseCallback } from "components/HookUseCallback";
 import { HookUseMemo } from "components/HookUseMemo";
 import { HookUseLayoutEffect } from "components/HookUseLayoutEffect";
+import { HookUseImperativeHandle } from "components/HookUseImperativeHandle";
 
 const Home = () => {
     // extraímos o valor do contexto com useContext, passando como parâmetro o context que foi criado
@@ -26,6 +27,7 @@ const Home = () => {
             <HookUseCallback />
             <HookUseMemo />
             <HookUseLayoutEffect />
+            <HookUseImperativeHandle />
         </div>
     );
 };
