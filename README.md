@@ -43,7 +43,7 @@ Também serão desenvolvidas aplicações completas ao longo do curso.
 - [x] [Módulo 10: **Projeto 2** - Miniblog (Firebase, Router e Context)](https://github.com/sucodelarangela/curso_react_udemy/tree/main/10_MINIBLOG/miniblog)
 - [x] [Módulo 11: Entendendo Hooks](https://github.com/sucodelarangela/curso_react_udemy/tree/main/11_HOOKS/reacthooks)
 - [ ] Módulo 12: **Projeto 3** - ReactGram (Redux, Express, MongoDB, Mongoose)
-- [ ] Módulo 13: Apêndice A: JavaScript moderno
+- [ ] Módulo 13: Apêndice A: JavaScript moderno _- em andamento_
 - [ ] Módulo 14: Apêndice B: Introdução a APIs
 - [ ] Módulo 15: Apêndice C: Setup do TypeScript
 - [ ] Módulo 16: Apêndice D: React com TypeScript
@@ -83,7 +83,7 @@ Some applications will also be developed during the course.
 - [x] [Section 10: **Project 2** - Miniblog (Firebase, Router, Context)](https://github.com/sucodelarangela/curso_react_udemy/tree/main/10_MINIBLOG/miniblog)
 - [x] [Section 11: Understanding Hooks](https://github.com/sucodelarangela/curso_react_udemy/tree/main/11_HOOKS/reacthooks)
 - [ ] Section 12: **Project 3** - ReactGram (Redux, Express, MongoDB, Mongoose)
-- [ ] Section 13: Apendix A: modern JavaScript
+- [ ] Section 13: Apendix A: modern JavaScript _- on going_
 - [ ] Section 14: Apendix B: Introduction to APIs
 - [ ] Section 15: Apendix C: TypeScript setup
 - [ ] Section 16: Apendix D: React with TypeScript
