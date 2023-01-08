@@ -3,7 +3,14 @@ import FirstComponent from "./components/FirstComponent";
 
 // 5 - desestruturando Props
 import SecondComponent from "./components/SecondComponent";
-import Destructuring from "./components/Destructuring";
+import Destructuring, { Category } from "./components/Destructuring";
+
+// 6 - useState
+import State from "./components/State";
+
+// 8 - type
+type textOrNull = string | null;
+type fixed = 'Isso' | 'Ou' | 'Aquilo';
 
 function App() {
   // 1 - variaveis
@@ -15,6 +22,12 @@ function App() {
   const userGreeting = (name: string): string => {
     return `Olá, ${name}`;
   };
+
+  // 8 - type
+  const myText: textOrNull = 'Tem algum texto aqui';
+  let mySecondText: textOrNull = null;
+  mySecondText = 'Opa';
+  const testandoFixed: fixed = 'Isso';
 
   return (
     <div className="App">
@@ -32,13 +45,19 @@ function App() {
         content="Algum conteúdo"
         commentsQty={10}
         tags={['tsx', 'jsx']}
+        category={Category.TS}
       />
       <Destructuring
         title='Segundo post'
         content="Mais outro conteúdo"
         commentsQty={5}
         tags={['python']}
+        category={Category.P}
       />
+      <State />
+      {myText && <p>Tem texto na variável e ele é "{myText}"</p>}
+      {mySecondText ? <p>Tem texto na variável e ele é "{mySecondText}"</p> : <p>A variável é nula.</p>}
+      {testandoFixed}
     </div>
   );
 }
