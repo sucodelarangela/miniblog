@@ -44,9 +44,9 @@ Também serão desenvolvidas aplicações completas ao longo do curso.
 - [x] [Módulo 11: Entendendo Hooks](https://github.com/sucodelarangela/curso_react_udemy/tree/main/11_HOOKS/reacthooks)
 - [ ] Módulo 12: **Projeto 3** - ReactGram (Redux, Express, MongoDB, Mongoose)
 - [x] [Módulo 13: Apêndice A: JavaScript moderno](https://github.com/sucodelarangela/curso_react_udemy/tree/main/13_ES6)
-- [ ] Módulo 14: Apêndice B: Introdução a APIs
-- [ ] Módulo 15: Apêndice C: Setup do TypeScript
-- [ ] Módulo 16: Apêndice D: React com TypeScript
+- [x] Módulo 14: Apêndice B: Introdução a APIs
+- [x] Módulo 15: Apêndice C: Setup do TypeScript
+- [ ] Módulo 16: Apêndice D: React com TypeScript _- em andamento_
 - [ ] Módulo 17: Apêndice E: Projeto React com TypeScript
 - [ ] Módulo 18: Conclusão e próximos passos
 
@@ -84,9 +84,9 @@ Some applications will also be developed during the course.
 - [x] [Section 11: Understanding Hooks](https://github.com/sucodelarangela/curso_react_udemy/tree/main/11_HOOKS/reacthooks)
 - [ ] Section 12: **Project 3** - ReactGram (Redux, Express, MongoDB, Mongoose)
 - [x] [Section 13: Apendix A: modern JavaScript](https://github.com/sucodelarangela/curso_react_udemy/tree/main/13_ES6)
-- [ ] Section 14: Apendix B: Introduction to APIs
-- [ ] Section 15: Apendix C: TypeScript setup
-- [ ] Section 16: Apendix D: React with TypeScript
+- [x] Section 14: Apendix B: Introduction to APIs
+- [x] Section 15: Apendix C: TypeScript setup
+- [ ] Section 16: Apendix D: React with TypeScript _- ongoing_
 - [ ] Section 17: Apendix E: React App with TypeScript
 - [ ] Section 18: Conclusion and next steps
 
