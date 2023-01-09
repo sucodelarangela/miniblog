@@ -46,9 +46,8 @@ Também serão desenvolvidas aplicações completas ao longo do curso.
 - [x] [Módulo 13: Apêndice A: JavaScript moderno](https://github.com/sucodelarangela/curso_react_udemy/tree/main/13_ES6)
 - [x] Módulo 14: Apêndice B: Introdução a APIs
 - [x] Módulo 15: Apêndice C: Setup do TypeScript
-- [x] Módulo 16: Apêndice D: React com TypeScript
+- [x] [Módulo 16: Apêndice D: React com TypeScript](https://github.com/sucodelarangela/curso_react_udemy/tree/main/16_REACT_TS/react_com_ts)
 - [ ] Módulo 17: Apêndice E: Projeto React com TypeScript
-- [ ] Módulo 18: Conclusão e próximos passos
 
 <a href='#top'>🔼 Voltar ao topo</a>
 
@@ -86,9 +85,8 @@ Some applications will also be developed during the course.
 - [x] [Section 13: Apendix A: modern JavaScript](https://github.com/sucodelarangela/curso_react_udemy/tree/main/13_ES6)
 - [x] Section 14: Apendix B: Introduction to APIs
 - [x] Section 15: Apendix C: TypeScript setup
-- [x] Section 16: Apendix D: React with TypeScript
+- [x] [Section 16: Apendix D: React with TypeScript](https://github.com/sucodelarangela/curso_react_udemy/tree/main/16_REACT_TS/react_com_ts)
 - [ ] Section 17: Apendix E: React App with TypeScript
-- [ ] Section 18: Conclusion and next steps
 
 <a href='#top'>🔼 Back to top</a>
 
