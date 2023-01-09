@@ -30,4 +30,4 @@ const Destructuring = ({ title, content, commentsQty, tags, category }: Props) =
   );
 };
 
-export default Destructuring;;;
+export default Destructuring;
