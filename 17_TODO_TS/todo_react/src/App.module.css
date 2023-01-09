@@ -1,0 +1,9 @@
+.main {
+  min-height: 70vh;
+  text-align: center;
+  padding: 2em;
+}
+
+.main h2 {
+  margin-bottom: 0.8em;
+}
