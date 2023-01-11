@@ -48,7 +48,7 @@ Também serão desenvolvidas aplicações completas ao longo do curso.
 - [x] Módulo 15: Apêndice C: Setup do TypeScript
 - [x] [Módulo 16: Apêndice D: React com TypeScript](https://github.com/sucodelarangela/curso_react_udemy/tree/main/16_REACT_TS/react_com_ts)
 - [x] [Módulo 17: Apêndice E: Projeto React com TypeScript](https://github.com/sucodelarangela/curso_react_udemy/tree/main/17_TODO_TS/todo_react)
-- [ ] Módulo 18: Apêndice F: Projeto em React com a API do TMDB
+- [x] [Módulo 18: Apêndice F: Projeto em React com a API do TMDB](https://github.com/sucodelarangela/curso_react_udemy/tree/main/18_MOVIES_LIB/movies_lib)
 
 <a href='#top'>🔼 Voltar ao topo</a>
 
@@ -88,7 +88,7 @@ Some applications will also be developed during the course.
 - [x] Section 15: Apendix C: TypeScript setup
 - [x] [Section 16: Apendix D: React with TypeScript](https://github.com/sucodelarangela/curso_react_udemy/tree/main/16_REACT_TS/react_com_ts)
 - [x] [Section 17: Apendix E: React App with TypeScript](https://github.com/sucodelarangela/curso_react_udemy/tree/main/17_TODO_TS/todo_react)
-- [ ] Section 18: Apendix F: React App with TMDB's API
+- [x] [Section 18: Apendix F: React App with TMDB's API](https://github.com/sucodelarangela/curso_react_udemy/tree/main/18_MOVIES_LIB/movies_lib)
 
 <a href='#top'>🔼 Back to top</a>
 
