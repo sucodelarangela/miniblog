@@ -9,8 +9,7 @@ import './MovieGrid.css';
 
 export const Search = () => {
   const [searchParams] = useSearchParams();
-  const [movies, setMovies] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [movies, setMovies] = useState(null);
   const query = searchParams.get('q');
 
   const getSearchedMovies = async (url) => {
@@ -20,10 +19,8 @@ export const Search = () => {
   };
 
   useEffect(() => {
-    setLoading(true);
     const searchedMovies = `${searchURL}?${apiKey}&query=${query}`;
     getSearchedMovies(searchedMovies);
-    setLoading(false);
   }, [movies]);
 
 
@@ -31,9 +28,9 @@ export const Search = () => {
     <section className='container'>
       <h2 className="title">Resultados para: <span className="query-text">{query}</span></h2>
       <div className="movies-container">
-        {loading && <p>Carregando...</p>}
-        {!loading && movies.length === 0 ? <p>Não há resultados para sua busca...</p> : ''}
-        {movies.length > 0 && movies.map(movie => <MovieCard key={movie.id} movie={movie} />)}
+        {!movies && <p>Carregando...</p>}
+        {movies && movies.length === 0 ? <p>Não há resultados para sua busca...</p> : ''}
+        {movies && movies.length > 0 && movies.map(movie => <MovieCard key={movie.id} movie={movie} />)}
       </div>
     </section>
   );
