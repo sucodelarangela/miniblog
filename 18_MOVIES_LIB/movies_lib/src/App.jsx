@@ -7,11 +7,10 @@ import { Navbar } from './components/Navbar';
 function App() {
 
   return (
-    <section className="App">
+    <main className="App">
       <Navbar />
-      <h2>Movies Lib</h2>
       <Outlet />
-    </section>
+    </main>
   );
 }
 
